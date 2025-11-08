@@ -1,5 +1,18 @@
 require('dotenv').config();
 
+// --- KEEP ALIVE SERVER FOR RENDER ---
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('✅ Discord Bot is running and alive!');
+});
+
+// Render expects something running on a port
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`🌐 Web server online - listening on port ${port}`));
+// -------------------------------------
+
 const {
   Client,
   GatewayIntentBits,
