@@ -33,6 +33,8 @@ const {
 const allowedRoleIds = [
   '1436508067759001804', // SHS Command
   '1392189768812724379', // PD Gold Command
+  '1392189768812724378', // PD Silver Command
+  '1392189768787431442', // PD Bronze Command
 ];
 
 // -----------------------------
